@@ -179,6 +179,14 @@ PrefabInstance:
       propertyPath: initialDatabase
       value: 
       objectReference: {fileID: 11400000, guid: 2fb2c6df79facc941a5bba01869eac3c, type: 2}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.localizationSettings.language
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: displaySettings.localizationSettings.useSystemLanguage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -200,6 +208,7 @@ GameObject:
   - component: {fileID: 369936775}
   - component: {fileID: 369936777}
   - component: {fileID: 369936776}
+  - component: {fileID: 369936778}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -525,6 +534,19 @@ MonoBehaviour:
   onDeselectedUsable:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &369936778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369936765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca1b8ab9f7411e41867f4344fb8ce47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languagePlayerPrefsKey: en
 --- !u!1 &1059338202
 GameObject:
   m_ObjectHideFlags: 0
