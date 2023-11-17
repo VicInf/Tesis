@@ -2,7 +2,9 @@ using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+
 
 public class PauseMenu : MonoBehaviour
 {
@@ -35,6 +37,10 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
+        PixelCrushers.UIPanel.monitorSelection = false; // Don't allow dialogue UI to steal back input focus.
+        PixelCrushers.UIButtonKeyTrigger.monitorInput = false; // Disable hotkeys.
+        PixelCrushers.DialogueSystem.DialogueManager.Pause(); // Stop DS timers (e.g., sequencer commands).
+        DialogueManager.SetDialoguePanel(false);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -42,6 +48,10 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
+        PixelCrushers.UIPanel.monitorSelection = true; // Allow dialogue UI to steal back input focus again.
+        PixelCrushers.UIButtonKeyTrigger.monitorInput = true; // Re-enable hotkeys.
+        PixelCrushers.DialogueSystem.DialogueManager.Unpause(); // Resume DS timers (e.g., sequencer commands).
+        DialogueManager.SetDialoguePanel(true);
         Time.timeScale = 1f; 
         isPaused = false;
     }
@@ -49,6 +59,8 @@ public class PauseMenu : MonoBehaviour
     public void LoadOptions()
     {
         SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 
     public void QuitGame()
