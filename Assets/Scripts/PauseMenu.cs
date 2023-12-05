@@ -1,3 +1,4 @@
+using PixelCrushers;
 using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,6 +35,15 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void PanelOn()
+    {
+        pauseMenu.SetActive(false);
+        PixelCrushers.UIPanel.monitorSelection = true; // Allow dialogue UI to steal back input focus again.
+        PixelCrushers.UIButtonKeyTrigger.monitorInput = true; // Re-enable hotkeys.
+        PixelCrushers.DialogueSystem.DialogueManager.Unpause(); // Resume DS timers (e.g., sequencer commands).
+        DialogueManager.SetDialoguePanel(true);
+    }
+
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
@@ -47,17 +57,15 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-        pauseMenu.SetActive(false);
-        PixelCrushers.UIPanel.monitorSelection = true; // Allow dialogue UI to steal back input focus again.
-        PixelCrushers.UIButtonKeyTrigger.monitorInput = true; // Re-enable hotkeys.
-        PixelCrushers.DialogueSystem.DialogueManager.Unpause(); // Resume DS timers (e.g., sequencer commands).
-        DialogueManager.SetDialoguePanel(true);
+        PanelOn();
         Time.timeScale = 1f; 
         isPaused = false;
     }
 
     public void LoadOptions()
     {
+        PanelOn();
+        DialogueManager.StopAllConversations();
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
         isPaused = false;
