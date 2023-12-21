@@ -41,7 +41,10 @@ public class PauseMenu : MonoBehaviour
         PixelCrushers.UIPanel.monitorSelection = true; // Allow dialogue UI to steal back input focus again.
         PixelCrushers.UIButtonKeyTrigger.monitorInput = true; // Re-enable hotkeys.
         PixelCrushers.DialogueSystem.DialogueManager.Unpause(); // Resume DS timers (e.g., sequencer commands).
-        DialogueManager.SetDialoguePanel(true);
+        if (DialogueManager.isConversationActive)
+        {
+            DialogueManager.SetDialoguePanel(true);
+        }
     }
 
     public void PauseGame()
@@ -50,7 +53,10 @@ public class PauseMenu : MonoBehaviour
         PixelCrushers.UIPanel.monitorSelection = false; // Don't allow dialogue UI to steal back input focus.
         PixelCrushers.UIButtonKeyTrigger.monitorInput = false; // Disable hotkeys.
         PixelCrushers.DialogueSystem.DialogueManager.Pause(); // Stop DS timers (e.g., sequencer commands).
-        DialogueManager.SetDialoguePanel(false);
+        if (DialogueManager.isConversationActive)
+        {
+            DialogueManager.SetDialoguePanel(false);
+        }
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -66,7 +72,7 @@ public class PauseMenu : MonoBehaviour
     {
         PanelOn();
         DialogueManager.StopAllConversations();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameMainMenu");
         Time.timeScale = 1f;
         isPaused = false;
     }

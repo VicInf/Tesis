@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 135255936}
   - component: {fileID: 135255935}
   - component: {fileID: 135255934}
+  - component: {fileID: 135255937}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -215,6 +216,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135255937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135255933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024d87a57ccd47d419653909fb5d0138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &406127567
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +241,7 @@ GameObject:
   - component: {fileID: 406127569}
   - component: {fileID: 406127568}
   - component: {fileID: 406127572}
+  - component: {fileID: 406127573}
   m_Layer: 5
   m_Name: RegisterMainMenuCanvas
   m_TagString: Untagged
@@ -333,6 +347,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9cb0641018b0c449c67fc98623baf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &406127573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406127567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7c24b0ba7bbcf469355b79a2c98193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registerButton: {fileID: 1112070383}
+  loginButton: {fileID: 1240060241}
+  playButton: {fileID: 1106870627}
+  playerDisplay: {fileID: 1251890606}
 --- !u!1 &625629230
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +672,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106870628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 406127572}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameMainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1106870628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,7 +1072,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1240060242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 406127572}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: GoToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LogInMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1240060242
 MonoBehaviour:
   m_ObjectHideFlags: 0

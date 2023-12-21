@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -12,6 +13,12 @@ public class Registration : MonoBehaviour
     public TMPro.TMP_InputField passwordInputField;
 
     public Button submitButton;
+    public Button showPasswordButton;
+
+    void Start()
+    {
+        showPasswordButton.onClick.AddListener(TogglePasswordVisibility);
+    }
 
     public void CallRegister()
     {
@@ -41,14 +48,30 @@ public class Registration : MonoBehaviour
                     break;
                 case UnityWebRequest.Result.Success:
                     Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                    if (webRequest.downloadHandler.text == "0")
+                    {
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("RegisterMainMenu");
+                    }
                     break;
             }
         }
     }
+    void TogglePasswordVisibility()
+    {
+        if (passwordInputField.contentType == TMP_InputField.ContentType.Password)
+        {
+            passwordInputField.contentType = TMP_InputField.ContentType.Standard;
+        }
+        else
+        {
+            passwordInputField.contentType = TMP_InputField.ContentType.Password;
+        }
+
+        passwordInputField.ForceLabelUpdate();
+    }
 
     public void VerifyInputs()
     {
-       submitButton.interactable = (nameInputField.text.Length >= 8 && passwordInputField.text.Length >=8 );
+       submitButton.interactable = (nameInputField.text.Length >= 4 && passwordInputField.text.Length >=8 );
     }
 }
