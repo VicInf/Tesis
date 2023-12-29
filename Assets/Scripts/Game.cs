@@ -9,18 +9,18 @@ using TMPro;
 
 public class Game : MonoBehaviour
 {
-    public TMP_Text playerDisplay;
-    public TMP_Text levelDisplay;
+   /* public TMP_Text playerDisplay;
+    public TMP_Text levelDisplay;*/
 
     private void Awake()
     {
-        if (DBManager.username == null)
+       /* if (DBManager.username == null)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-        } 
+        } */
 
-        playerDisplay.text = "Jugador: " + DBManager.username;
-        levelDisplay.text = "Nivel: " + DBManager.level;
+     /*   playerDisplay.text = "Jugador: " + DBManager.username;
+        levelDisplay.text = "Nivel: " + DBManager.level;*/
     }
 
     public void CallSaveData()
@@ -58,6 +58,6 @@ public class Game : MonoBehaviour
     public void IncreaseScore()
     {
         DBManager.level++;
-        levelDisplay.text = "Nivel: " + DBManager.level;
+     //  levelDisplay.text = "Nivel: " + DBManager.level;
     }
 }
