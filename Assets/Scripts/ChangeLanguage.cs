@@ -2,22 +2,22 @@ using PixelCrushers.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Unity.VisualScripting.Icons;
+using UnityEngine.UI;
 
 public class LanguageManager : MonoBehaviour
 {
 
     public void Start()
     {
-        LoadLanguage();  
+        LoadLanguage();
     }
 
-    // Call this when the player selects English
     public void SaveLanguageEN()
     {
         Lua.Run("Variable['Language'] = 'en'");
         string saveData = PersistentDataManager.GetSaveData();
         PlayerPrefs.SetString("LanguageData", saveData);
+        LoadLanguage();
     }
 
     // Call this when the player selects French
@@ -26,6 +26,7 @@ public class LanguageManager : MonoBehaviour
         Lua.Run("Variable['Language'] = 'fr'");
         string saveData = PersistentDataManager.GetSaveData();
         PlayerPrefs.SetString("LanguageData", saveData);
+        LoadLanguage();
     }
 
     // Call this when your game starts

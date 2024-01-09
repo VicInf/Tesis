@@ -76,9 +76,4 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
     }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }
