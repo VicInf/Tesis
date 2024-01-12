@@ -54,10 +54,4 @@ public class Game : MonoBehaviour
             Debug.Log(webRequest.downloadHandler.text);
         }
     }
-
-    public void IncreaseScore()
-    {
-        DBManager.level++;
-     //  levelDisplay.text = "Nivel: " + DBManager.level;
-    }
 }

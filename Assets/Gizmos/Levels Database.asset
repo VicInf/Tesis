@@ -1040,7 +1040,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["scene"] = 1;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2622,13 +2622,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 935.21735
+        x: 298.07693
+        y: 937.1403
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 296.36334}
-    canvasZoom: 0.5500004
+    canvasScrollPosition: {x: 0, y: 449.58}
+    canvasZoom: 0.52000046
   - id: 3
     fields:
     - title: Title
@@ -3179,7 +3179,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 34
+        destinationConversationID: 3
+        destinationDialogueID: 35
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Chat"] == true
       userScript: 
       onExecute:
@@ -3187,13 +3193,70 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 443.09848
-        y: 595.56494
+        x: 447.3538
+        y: 594.5011
+        width: 160
+        height: 30
+    - id: 35
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: LoadLevel(ScoreScene);
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 448.4902
+        y: 662.68286
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 94.68085, y: 306.46045}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 33.459938, y: 490.01257}
+    canvasZoom: 0.8800001
   - id: 4
     fields:
     - title: Title
@@ -3489,7 +3552,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 146.65656}
+    canvasScrollPosition: {x: 13.186829, y: 56.54666}
     canvasZoom: 0.9100001
   syncInfo:
     syncActors: 0

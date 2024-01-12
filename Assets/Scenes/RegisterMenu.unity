@@ -1719,7 +1719,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 406127572}
         m_TargetAssemblyTypeName: Registration, Assembly-CSharp
-        m_MethodName: CallRegister
+        m_MethodName: CallRegisterUser
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

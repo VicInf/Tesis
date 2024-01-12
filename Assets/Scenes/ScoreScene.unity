@@ -363,11 +363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1839492125353330380, guid: c82e89a67154368459b9e28c322a4b42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LevelLoaded
+      value: SceneLoaded
       objectReference: {fileID: 0}
     - target: {fileID: 1839492125353330380, guid: c82e89a67154368459b9e28c322a4b42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSelection, Assembly-CSharp
+      value: LoadScene, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1839492125353330380, guid: c82e89a67154368459b9e28c322a4b42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -383,7 +383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2492776962892802127, guid: c82e89a67154368459b9e28c322a4b42, type: 3}
       propertyPath: m_Name
-      value: ExitMenu
+      value: ExitButton
       objectReference: {fileID: 0}
     - target: {fileID: 5693349442218865861, guid: c82e89a67154368459b9e28c322a4b42, type: 3}
       propertyPath: m_text

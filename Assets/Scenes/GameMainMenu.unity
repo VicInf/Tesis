@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f3e667ec5a959438264edd60fd428e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasPause: {fileID: 0}
 --- !u!1 &96255990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,6 +2177,14 @@ PrefabInstance:
       propertyPath: displaySettings.localizationSettings.language
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11471062, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_prefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471062, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_prefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 140896, guid: 3b6bd600f1610bb4685a5f32959f0fae, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -18,18 +18,21 @@ public class LogIn : MonoBehaviour
     {
         showPasswordButton.onClick.AddListener(TogglePasswordVisibility);
     }
-    public void CallLogin()
+    public void CallLoginUser()
     {
-        StartCoroutine(Login());
+        StartCoroutine(Login("http://localhost/sqlconnect/LogIn.php"));
     }
-
-    IEnumerator Login()
+    public void CallLoginTeacher()
+    {
+        StartCoroutine(Login("http://localhost/sqlconnect/TeacherLogIn.php"));
+    }
+    IEnumerator Login(string url)
     {
         WWWForm form = new WWWForm();
         form.AddField("name", nameInputField.text);
         form.AddField("password", passwordInputField.text);
 
-        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/LogIn.php", form))
+        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
             yield return webRequest.SendWebRequest();
 
