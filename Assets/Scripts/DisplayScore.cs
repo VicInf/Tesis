@@ -32,25 +32,31 @@ public class DisplayScore : MonoBehaviour
         {
             motivation.text = "¡Bien hecho!";
         }
-        if(!reachEnd && score >= 5 ) 
+        if(!reachEnd && score >= 5 && DBManager.language == "en") 
         {
             motivation.text = "¡Excelente trabajo!";
-            StartCoroutine(UpdateLevelData(DBManager.username, lastScenePlayed));
+            StartCoroutine(UpdateLevelDataEN(DBManager.username, lastScenePlayed));
             reachEnd = true;
         }
-        if(score == 0 )
+        if (!reachEnd && score >= 5 && DBManager.language == "fr")
+        {
+            motivation.text = "¡Excelente trabajo!";
+            StartCoroutine(UpdateLevelDataFR(DBManager.username, lastScenePlayed));
+            reachEnd = true;
+        }
+        if (score == 0 )
         {
             motivation.text = "Debes esforzarte mas, ¡Puedes hacerlo!";
         }
     }
 
-    IEnumerator UpdateLevelData(string playerToken, int lastScenePlayed)
+    IEnumerator UpdateLevelDataFR(string playerToken, int lastScenePlayed)
     {
         WWWForm form = new WWWForm();
         form.AddField("playerToken", playerToken);
         form.AddField("lastScenePlayed", lastScenePlayed);
 
-        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/UpdateLevelButton.php", form))
+        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/UpdateLevelButtonFR.php", form))
         {
             yield return webRequest.SendWebRequest();
   
@@ -63,8 +69,33 @@ public class DisplayScore : MonoBehaviour
                 Debug.Log("Level data update complete!");
                 if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
                 {
-                    DBManager.level = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
-                    Debug.Log(DBManager.level);
+                    DBManager.levelFR = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
+                    Debug.Log(DBManager.levelFR);
+                }
+            }
+        }
+    }
+    IEnumerator UpdateLevelDataEN(string playerToken, int lastScenePlayed)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("playerToken", playerToken);
+        form.AddField("lastScenePlayed", lastScenePlayed);
+
+        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/UpdateLevelButtonEN.php", form))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                Debug.Log("Level data update complete!");
+                if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
+                {
+                    DBManager.levelEN = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
+                    Debug.Log(DBManager.levelEN);
                 }
             }
         }

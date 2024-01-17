@@ -37,6 +37,7 @@ public class LanguageManager : MonoBehaviour
             string saveData = PlayerPrefs.GetString("LanguageData");
             PersistentDataManager.ApplySaveData(saveData);
             string language = Lua.Run("return Variable['Language']").AsString;
+            DBManager.language = language;
             DialogueManager.SetLanguage(language);
             // Now you can apply the language to your game
             Debug.Log("Loaded language: " + language);

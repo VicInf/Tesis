@@ -7,7 +7,11 @@ public static class DBManager
 
     public static string username;
 
-    public static int level;
+    public static int levelEN;
+
+    public static int levelFR;
+
+    public static string language;
 
     public static bool Loggedin { get { return username != null; } }    
 

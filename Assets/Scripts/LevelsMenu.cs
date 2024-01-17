@@ -12,17 +12,36 @@ public class LevelsMenu : MonoBehaviour
 
     private void Start()
     {
-        int level = DBManager.level;
-
-        for (int i = 0; i < buttons.Length; i++)
+        if (DBManager.language == "fr")
         {
-            buttons[i].interactable = false;
+            int levelFR = DBManager.levelFR;
+
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].interactable = false;
+            }
+
+            for (int i = 0; i < levelFR; i++)
+            {
+                buttons[i].interactable = true;
+            }
+        }
+        if (DBManager.language == "en")
+        {
+            int levelEN = DBManager.levelEN;
+
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].interactable = false;
+            }
+
+            for (int i = 0; i < levelEN; i++)
+            {
+                buttons[i].interactable = true;
+            }
         }
 
-        for (int i = 0; i < level; i++)
-        {
-            buttons[i].interactable = true;
-        }
+        
     }
 
     public void ShowMenu()

@@ -20,19 +20,19 @@ public class LogIn : MonoBehaviour
     }
     public void CallLoginUser()
     {
-        StartCoroutine(Login("http://localhost/sqlconnect/LogIn.php"));
+        StartCoroutine(LoginUser());
     }
     public void CallLoginTeacher()
     {
-        StartCoroutine(Login("http://localhost/sqlconnect/TeacherLogIn.php"));
+        StartCoroutine(LoginTeacher());
     }
-    IEnumerator Login(string url)
+    IEnumerator LoginUser()
     {
         WWWForm form = new WWWForm();
         form.AddField("name", nameInputField.text);
         form.AddField("password", passwordInputField.text);
 
-        using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
+        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/LogIn.php", form))
         {
             yield return webRequest.SendWebRequest();
 
@@ -47,13 +47,39 @@ public class LogIn : MonoBehaviour
                 if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
                 {
                     DBManager.username = nameInputField.text;
-                    DBManager.level = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
+                    DBManager.levelEN = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
+                    DBManager.levelFR = int.Parse(webRequest.downloadHandler.text.Split('\t')[2]);
                     UnityEngine.SceneManagement.SceneManager.LoadScene("RegisterMainMenu");
                 }
             }
         }
     }
+    IEnumerator LoginTeacher()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("name", nameInputField.text);
+        form.AddField("password", passwordInputField.text);
 
+        using (UnityWebRequest webRequest = UnityWebRequest.Post("http://localhost/sqlconnect/TeacherLogIn.php", form))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(webRequest.error);
+            }
+            else
+            {
+                Debug.Log(webRequest.downloadHandler.text);
+                // Process the response
+                if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
+                {
+                    DBManager.username = nameInputField.text;
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("StudentProgress");
+                }
+            }
+        }
+    }
     void TogglePasswordVisibility()
     {
         if (passwordInputField.contentType == TMP_InputField.ContentType.Password)

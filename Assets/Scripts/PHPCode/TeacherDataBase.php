@@ -4,7 +4,7 @@
 
     //check connection
     if (mysqli_connect_errno()) {
-        echo "1: Conexión fallida."; // Error code number '1' = Connection failed
+        echo "1: Conexion fallida."; // Error code number '1' = Connection failed
         exit();
     }
 
