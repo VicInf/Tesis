@@ -75,7 +75,7 @@ public class LogIn : MonoBehaviour
                 if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
                 {
                     DBManager.username = nameInputField.text;
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("StudentProgress");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("TeacherMenu");
                 }
             }
         }

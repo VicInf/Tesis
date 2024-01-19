@@ -273,7 +273,7 @@ MonoBehaviour:
       - title: Sequence
         value: '{{default}};
 
-          SetVariable("score", 0);'
+'
         type: 0
         typeString: 
       - title: en
@@ -299,7 +299,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["score"] = 0;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1046,8 +1046,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 297.8261
-        y: 871.6723
+        x: 294.63464
+        y: 873.8925
         width: 160
         height: 30
     - id: 44
@@ -2596,7 +2596,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: LoadLevel(ScoreSceneFR);
+        value: LoadLevel(ScoreScene);
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -2622,13 +2622,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 296.15384
-        y: 940.9865
+        x: 293.9561
+        y: 970.657
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 3.8461304, y: 491.8873}
-    canvasZoom: 0.52000046
+    canvasScrollPosition: {x: 0, y: 821.2678}
+    canvasZoom: 0.9100001
   - id: 3
     fields:
     - title: Title
@@ -2791,7 +2791,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["score"] = 5
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3187,7 +3187,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Chat"] == true
-      userScript: 
+      userScript: Variable["scene"] = 2;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3212,7 +3212,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 3
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3250,13 +3250,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 448.4902
-        y: 662.68286
+        x: 447.2244
+        y: 662.6829
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 33.459938, y: 490.01257}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 0, y: 354.451}
+    canvasZoom: 0.7900002
   - id: 4
     fields:
     - title: Title
@@ -3554,6 +3554,181 @@ MonoBehaviour:
     entryGroups: []
     canvasScrollPosition: {x: 13.186829, y: 56.54666}
     canvasZoom: 0.9100001
+  - id: 5
+    fields:
+    - title: Title
+      value: "Tercera Lecci\xF3n"
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 0
+        destinationConversationID: 5
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 160
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: '{{default}};
+
+          SetVariable("score", 5);
+
+          LoadLevel(ScoreScene);'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["scene"] = 3;
+
+        Variable["score"] = 5;'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
   syncInfo:
     syncActors: 0
     syncItems: 0

@@ -12,6 +12,7 @@ public class Registration : MonoBehaviour
 {
     public TMPro.TMP_InputField nameInputField;
     public TMPro.TMP_InputField passwordInputField;
+    public TMPro.TMP_InputField emailInputField;
 
     public Button submitButton;
     public Button showPasswordButton;
@@ -35,6 +36,7 @@ public class Registration : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("name", nameInputField.text); 
         form.AddField ("password", passwordInputField.text);
+        form.AddField("email", emailInputField.text);
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
             // Request and wait for the desired page.
@@ -77,6 +79,6 @@ public class Registration : MonoBehaviour
 
     public void VerifyInputs()
     {
-       submitButton.interactable = (nameInputField.text.Length >= 4 && passwordInputField.text.Length >=8 );
+       submitButton.interactable = (nameInputField.text.Length >= 4 && passwordInputField.text.Length >=8 && emailInputField.text.Length >= 8);
     }
 }

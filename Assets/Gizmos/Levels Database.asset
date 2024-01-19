@@ -2627,8 +2627,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 821.2678}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 0, y: 554.09735}
+    canvasZoom: 0.5500004
   - id: 3
     fields:
     - title: Title
@@ -3260,7 +3260,7 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Title
-      value: Level Menu Appear
+      value: Opciones Profesora
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -3389,7 +3389,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Hola, \xBFEstas listo para empezar con tus lecciones de hoy?"
+        value: "Hola, \xBFQuieres comenzar con las lecciones de hoy?"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -3416,6 +3416,12 @@ MonoBehaviour:
         originDialogueID: 2
         destinationConversationID: 4
         destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 2
+        destinationConversationID: 4
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       - originConversationID: 4
@@ -3490,7 +3496,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 304
+        x: 213.8901
         y: 249
         width: 160
         height: 30
@@ -3547,8 +3553,67 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 541
-        y: 251
+        x: 611.3296
+        y: 247.70328
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Tutorial
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: '{{default}};
+
+          LoadLevel(Tutorial);'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 421.00006
+        y: 252.75824
         width: 160
         height: 30
     entryGroups: []
