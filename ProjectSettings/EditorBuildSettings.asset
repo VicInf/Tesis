@@ -9,11 +9,35 @@ EditorBuildSettings:
     path: Assets/Scenes/RegisterMainMenu.unity
     guid: 954a90aa55afd3c41a426be2531c5a14
   - enabled: 1
+    path: Assets/Scenes/ChangePassword.unity
+    guid: 0b586b455c97e8644a53b974d77d2352
+  - enabled: 1
+    path: Assets/Scenes/ForgottenPassword.unity
+    guid: 838d3af30653c0e46814170b951334ec
+  - enabled: 1
     path: Assets/Scenes/RegisterMenu.unity
     guid: 2feca6f13c6dea44381850c90917f8c0
   - enabled: 1
     path: Assets/Scenes/LogInMenu.unity
     guid: d9103c01cad44954592191bf421395a1
+  - enabled: 1
+    path: Assets/Scenes/TeacherLogIn.unity
+    guid: 1e82c6b5c1628e04a83af746a016eafb
+  - enabled: 1
+    path: Assets/Scenes/TeacherRegister.unity
+    guid: 1d207ec83fd99554d87b6c971da27814
+  - enabled: 1
+    path: Assets/Scenes/TeacherMenu.unity
+    guid: 80311f334dd46a94998651a24863e810
+  - enabled: 1
+    path: Assets/Scenes/TeacherAddStudent.unity
+    guid: cd5738a3fb8f88e4596e50338c9a2b90
+  - enabled: 1
+    path: Assets/Scenes/TeacherKickStudent.unity
+    guid: 1bbc7d872afc2e2499fe15521a688372
+  - enabled: 1
+    path: Assets/Scenes/StudentProgress.unity
+    guid: 299351404934d764b9bb341e16c41162
   - enabled: 1
     path: Assets/Scenes/GameMainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -26,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 648ff07d6e1bc92439367352ceccda9c
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: b0065c7968ad9b3458aafe24eb75c038
   - enabled: 1
     path: Assets/Scenes/ScoreScene.unity
     guid: da55d00fa5c69ca4a8c8ea834b0b7fb5
