@@ -20,7 +20,6 @@ public class LanguageManager : MonoBehaviour
         LoadLanguage();
     }
 
-    // Call this when the player selects French
     public void SaveLanguageFR()
     {
         Lua.Run("Variable['Language'] = 'fr'");
@@ -29,7 +28,6 @@ public class LanguageManager : MonoBehaviour
         LoadLanguage();
     }
 
-    // Call this when your game starts
     public void LoadLanguage()
     {
         if (PlayerPrefs.HasKey("LanguageData"))
@@ -39,7 +37,6 @@ public class LanguageManager : MonoBehaviour
             string language = Lua.Run("return Variable['Language']").AsString;
             DBManager.language = language;
             DialogueManager.SetLanguage(language);
-            // Now you can apply the language to your game
             Debug.Log("Loaded language: " + language);
         }
         else

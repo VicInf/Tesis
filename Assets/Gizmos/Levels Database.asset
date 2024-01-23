@@ -2635,7 +2635,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 47.160034, y: 402.12216}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.5800004
   - id: 3
     fields:
@@ -2773,7 +2773,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'SetActive(InGameBackground, true);
+
+          SetActive(ExerciseTheme,
+          true);'
         type: 0
         typeString: 
       - title: en
@@ -2799,7 +2802,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["score"] = 5
+      userScript: Variable["score"] = 0
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3075,7 +3078,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 524.3749
+        x: 526.90656
         y: 493.43732
         width: 160
         height: 30
@@ -3194,15 +3197,15 @@ MonoBehaviour:
         destinationDialogueID: 35
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Chat"] == true
-      userScript: Variable["scene"] = 2;
+      conditionsString: 
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 447.3538
-        y: 594.5011
+        x: 446.08798
+        y: 593.2353
         width: 160
         height: 30
     - id: 35
@@ -3216,7 +3219,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 1
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3232,7 +3235,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: LoadLevel(ScoreScene);
+        value: 'LoadLevel(ScoreScene);
+
+          SetActive(InGameBackground, false);
+
+          SetActive(ExerciseTheme,
+          false);'
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -3259,12 +3267,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 447.2244
-        y: 662.6829
+        y: 657.6196
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 354.451}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 286.8561}
+    canvasZoom: 0.7000003
   - id: 4
     fields:
     - title: Title
@@ -3445,8 +3453,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 421
-        y: 161
+        x: 419.7342
+        y: 159.73416
         width: 160
         height: 30
     - id: 3
@@ -4364,8 +4372,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 224
-        y: 423
+        x: 222.27585
+        y: 424.72412
         width: 160
         height: 30
     - id: 8
@@ -5224,7 +5232,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.85000014
+    canvasZoom: 0.5800004
   syncInfo:
     syncActors: 0
     syncItems: 0

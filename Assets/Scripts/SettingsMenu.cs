@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
+    public Slider volumeSlider;
+
+    public AudioMixer audioMixer;
+
     public TMPro.TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
@@ -35,6 +39,9 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume", 0.75f);
+        volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
     public void SetResolution (int resolutionIndex)
@@ -42,7 +49,12 @@ public class SettingsMenu : MonoBehaviour
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
-
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("Volume", volume);
+        PlayerPrefs.SetFloat("Volume", volume);
+        PlayerPrefs.Save();
+    }
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);

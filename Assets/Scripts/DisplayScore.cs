@@ -19,7 +19,7 @@ public class DisplayScore : MonoBehaviour
     [SerializeField] private AudioSource lossingSoundEffect;
     [SerializeField] private AudioSource goodSoundEffect;
 
-    void Update()
+    void Awake()
     {
         // Get the value of the 'score' variable
         int score = DialogueLua.GetVariable("score").AsInt;
@@ -28,13 +28,19 @@ public class DisplayScore : MonoBehaviour
         // Update the UI Text element with the value of 'score'
         scoreText.text = "Respuestas correctas: " + score.ToString();
 
-        if(score <= 1 )
+        if (score == 0)
+        {
+            motivation.text = "Debes esforzarte más, ¡Puedes hacerlo!";
+            motivation.color = Color.white;
+            lossingSoundEffect.Play();
+        }
+        if (score == 1 )
         {
             motivation.text = "¡Puedes hacerlo mejor!";
             motivation.color = Color.white;
             lossingSoundEffect.Play();
         }
-        if(score <= 4 ) 
+        if(score <= 4 && score >1) 
         {
             motivation.text = "¡Bien hecho!";
             motivation.color = Color.white;
@@ -53,12 +59,6 @@ public class DisplayScore : MonoBehaviour
             StartCoroutine(UpdateLevelDataFR(DBManager.username, lastScenePlayed));
             winningSoundEffect.Play();
             reachEnd = true;
-        }
-        if (score == 0 )
-        {
-            motivation.text = "Debes esforzarte más, ¡Puedes hacerlo!";
-            motivation.color = Color.white;
-            lossingSoundEffect.Play();
         }
     }
 
