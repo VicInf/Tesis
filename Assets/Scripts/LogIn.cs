@@ -11,6 +11,10 @@ public class LogIn : MonoBehaviour
     public TMPro.TMP_InputField nameInputField;
     public TMPro.TMP_InputField passwordInputField;
 
+    public TextMeshProUGUI dataBaseText;
+
+    public GameObject dataBaseObject;
+
     public Button submitButton;
     public Button showPasswordButton;
 
@@ -38,13 +42,17 @@ public class LogIn : MonoBehaviour
 
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
-                Debug.Log(webRequest.error);
+                dataBaseObject.SetActive(true);
+                dataBaseText.text = webRequest.error;
             }
             else
             {
-                Debug.Log(webRequest.downloadHandler.text);
-                // Process the response
-                if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
+                if (webRequest.downloadHandler.text.Split('\t')[0] != "0")
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text;
+                }
+                else
                 {
                     DBManager.username = nameInputField.text;
                     DBManager.levelEN = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
@@ -54,6 +62,7 @@ public class LogIn : MonoBehaviour
             }
         }
     }
+
     IEnumerator LoginTeacher()
     {
         WWWForm form = new WWWForm();
@@ -66,13 +75,17 @@ public class LogIn : MonoBehaviour
 
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
-                Debug.Log(webRequest.error);
+                dataBaseObject.SetActive(true);
+                dataBaseText.text = webRequest.downloadHandler.text;
             }
             else
             {
-                Debug.Log(webRequest.downloadHandler.text);
-                // Process the response
-                if (webRequest.downloadHandler.text.Split('\t')[0] == "0")
+                if (webRequest.downloadHandler.text.Split('\t')[0] != "0")
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text;
+                }
+                else
                 {
                     DBManager.username = nameInputField.text;
                     UnityEngine.SceneManagement.SceneManager.LoadScene("TeacherMenu");
@@ -80,6 +93,7 @@ public class LogIn : MonoBehaviour
             }
         }
     }
+
     void TogglePasswordVisibility()
     {
         if (passwordInputField.contentType == TMP_InputField.ContentType.Password)

@@ -13,7 +13,11 @@ public class DisplayScore : MonoBehaviour
     // Reference to your UI Text element
     public TMP_Text scoreText;
     public TMP_Text motivation;
-    private bool reachEnd = false; 
+    private bool reachEnd = false;
+
+    [SerializeField] private AudioSource winningSoundEffect;
+    [SerializeField] private AudioSource lossingSoundEffect;
+    [SerializeField] private AudioSource goodSoundEffect;
 
     void Update()
     {
@@ -27,26 +31,34 @@ public class DisplayScore : MonoBehaviour
         if(score <= 1 )
         {
             motivation.text = "¡Puedes hacerlo mejor!";
+            motivation.color = Color.white;
+            lossingSoundEffect.Play();
         }
         if(score <= 4 ) 
         {
             motivation.text = "¡Bien hecho!";
+            motivation.color = Color.white;
+            goodSoundEffect.Play();
         }
         if(!reachEnd && score >= 5 && DBManager.language == "en") 
         {
             motivation.text = "¡Excelente trabajo!";
             StartCoroutine(UpdateLevelDataEN(DBManager.username, lastScenePlayed));
+            winningSoundEffect.Play();
             reachEnd = true;
         }
         if (!reachEnd && score >= 5 && DBManager.language == "fr")
         {
             motivation.text = "¡Excelente trabajo!";
             StartCoroutine(UpdateLevelDataFR(DBManager.username, lastScenePlayed));
+            winningSoundEffect.Play();
             reachEnd = true;
         }
         if (score == 0 )
         {
-            motivation.text = "Debes esforzarte mas, ¡Puedes hacerlo!";
+            motivation.text = "Debes esforzarte más, ¡Puedes hacerlo!";
+            motivation.color = Color.white;
+            lossingSoundEffect.Play();
         }
     }
 

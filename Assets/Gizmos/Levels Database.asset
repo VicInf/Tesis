@@ -60,7 +60,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: Teacher
+      value: Profesora
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -271,7 +271,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: '{{default}};'
+        value: '{{default}};
+
+          SetActive(InGameBackground, true);
+
+          SetActive(ExerciseTheme,
+          true);'
         type: 0
         typeString: 
       - title: en
@@ -2594,7 +2599,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: LoadLevel(ScoreScene);
+        value: 'LoadLevel(ScoreScene);
+
+          SetActive(InGameBackground, false);
+
+          SetActive(ExerciseTheme,
+          false);'
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -2625,8 +2635,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6100004
+    canvasScrollPosition: {x: 47.160034, y: 402.12216}
+    canvasZoom: 0.5800004
   - id: 3
     fields:
     - title: Title
@@ -3987,7 +3997,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Al comenzar las lecciones se les mostrar\xE1 una frase, palabra o
+        value: "Al comenzar las lecciones se le mostrar\xE1 una frase, palabra o
           imagen."
         type: 0
         typeString: CustomFieldType_Text
@@ -4051,7 +4061,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Usted deber\xE1 elegir entre las opciones que se la dan la palabra
+        value: "Usted deber\xE1 elegir entre las opciones que se le dan la palabra
           correcta en el idioma que estudia."
         type: 0
         typeString: CustomFieldType_Text
@@ -5177,7 +5187,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "Espero que este tutorial te haya ayudado, \xA1Mucho exito en tus
+        value: "Espero que este tutorial le haya ayudado, \xA1Mucho \xE9xito en tus
           estudios!"
         type: 0
         typeString: CustomFieldType_Text
@@ -5213,8 +5223,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 149.52805}
-    canvasZoom: 0.8800001
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.85000014
   syncInfo:
     syncActors: 0
     syncItems: 0

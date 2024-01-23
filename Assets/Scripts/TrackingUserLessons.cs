@@ -43,9 +43,8 @@ public class TrackingUserLessons : MonoBehaviour
                         var textMeshPro = new GameObject("TextMeshPro " + i + "_" + j).AddComponent<TextMeshProUGUI>();
 
                         // Change the color to black
-                        textMeshPro.color = Color.black;
+                        textMeshPro.color = Color.white;
                         textMeshPro.fontSize = 32;
-                        textMeshPro.margin = new Vector4(27, 0, 0, 0);
 
                         // Change the alignment to left indent
                         textMeshPro.alignment = TextAlignmentOptions.Midline;

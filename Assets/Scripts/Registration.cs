@@ -14,6 +14,10 @@ public class Registration : MonoBehaviour
     public TMPro.TMP_InputField passwordInputField;
     public TMPro.TMP_InputField emailInputField;
 
+    public TextMeshProUGUI dataBaseText;
+
+    public GameObject dataBaseObject;
+
     public Button submitButton;
     public Button showPasswordButton;
  
@@ -42,27 +46,27 @@ public class Registration : MonoBehaviour
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            string[] pages = url.Split('/');
-            int page = pages.Length - 1;
-            switch (webRequest.result)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
-                case UnityWebRequest.Result.ConnectionError:
-                case UnityWebRequest.Result.DataProcessingError:
-                    Debug.LogError(pages[page] + ": Error: " + webRequest.error);
-                    break;
-                case UnityWebRequest.Result.ProtocolError:
-                    Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
-                    break;
-                case UnityWebRequest.Result.Success:
-                    Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
-                    if (webRequest.downloadHandler.text == "0")
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene("RegisterMainMenu");
-                    }
-                    break;
+                dataBaseObject.SetActive(true);
+                dataBaseText.text = webRequest.error;
+            }
+            else
+            {
+                if (webRequest.downloadHandler.text.Split('\t')[0] != "0")
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text;
+                }
+                else
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text.Split('\t')[1];
+                }
             }
         }
     }
+
     void TogglePasswordVisibility()
     {
         if (passwordInputField.contentType == TMP_InputField.ContentType.Password)

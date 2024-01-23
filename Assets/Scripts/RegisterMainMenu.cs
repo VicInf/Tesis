@@ -18,6 +18,7 @@ public class RegisterMainMenu : MonoBehaviour
         if (DBManager.Loggedin)
         {
             playerDisplay.text = "Player: " + DBManager.username;
+            playerDisplay.alignment = TextAlignmentOptions.Midline;
         }
         registerButton.interactable = !DBManager.Loggedin;
         loginButton.interactable = !DBManager.Loggedin;

@@ -7,6 +7,11 @@ using TMPro;
 public class PasswordTokenRequest : MonoBehaviour
 {
     public TMPro.TMP_InputField emailInputField;
+
+    public TextMeshProUGUI dataBaseText;
+
+    public GameObject dataBaseObject;
+
     public Button submitButton;
     public void RequestPasswordResetToken()
     {
@@ -23,11 +28,21 @@ public class PasswordTokenRequest : MonoBehaviour
 
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
-                Debug.Log(webRequest.error);
+                dataBaseObject.SetActive(true);
+                dataBaseText.text = webRequest.error;
             }
             else
             {
-                Debug.Log(webRequest.downloadHandler.text);
+                if (webRequest.downloadHandler.text.Split('\t')[0] != "0")
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text;
+                }
+                else
+                {
+                    dataBaseObject.SetActive(true);
+                    dataBaseText.text = webRequest.downloadHandler.text.Split('\t')[1];
+                }
             }
         }
     }
