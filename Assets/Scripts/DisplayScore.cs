@@ -48,14 +48,14 @@ public class DisplayScore : MonoBehaviour
         }
         if(!reachEnd && score >= 5 && DBManager.language == "en") 
         {
-            motivation.text = "¡Excelente trabajo!";
+            motivation.text = "¡Excelente trabajo!\n Has avanzado de nivel.";
             StartCoroutine(UpdateLevelDataEN(DBManager.username, lastScenePlayed));
             winningSoundEffect.Play();
             reachEnd = true;
         }
         if (!reachEnd && score >= 5 && DBManager.language == "fr")
         {
-            motivation.text = "¡Excelente trabajo!";
+            motivation.text = "¡Excelente trabajo!\n Has avanzado de nivel.";
             StartCoroutine(UpdateLevelDataFR(DBManager.username, lastScenePlayed));
             winningSoundEffect.Play();
             reachEnd = true;

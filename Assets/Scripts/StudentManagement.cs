@@ -24,6 +24,11 @@ public class StudentManagement: MonoBehaviour
     {
         StartCoroutine(StudentManager("http://localhost/sqlconnect/KickStudent.php"));
     }
+    public void KickAllFromClass()
+    {
+        StartCoroutine(StudentManager("http://localhost/sqlconnect/KickAllStudents.php"));
+    }
+
 
     IEnumerator StudentManager(string url)
     {

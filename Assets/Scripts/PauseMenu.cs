@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         if (DialogueManager.isConversationActive)
         {
             DialogueManager.SetDialoguePanel(false);
+
         }
         Time.timeScale = 0f;
         isPaused = true;

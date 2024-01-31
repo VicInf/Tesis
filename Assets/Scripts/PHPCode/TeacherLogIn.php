@@ -5,8 +5,8 @@
     //check connection
     if (mysqli_connect_errno()) 
     {
-        echo "1: Conexion fallida."; // Error code number '1' = Connection failed
-            exit();
+        echo "Error 1: Conexion fallida."; // Error code number '1' = Connection failed
+        exit();
     }
 
     $username = mysqli_real_escape_string($connection, $_POST["name"]);
@@ -14,18 +14,18 @@
 
     if ($username != $usernameclean) 
     {
-        echo "7: Se han utilizado no soportados para el nombre de usuario"; //Error code number '7' = ASCII unsoported characters 
+        echo "Error 7: Se han utilizado caracteres no soportados para el nombre de usuario"; //Error code number '7' = ASCII unsoported characters 
     }
     $password = $_POST["password"];
 
     //check if username already exists
-    $namecheckquery = "SELECT username, salt, hash, level FROM profesores WHERE username='" . $username . "';";
+    $namecheckquery = "SELECT username, salt, hash FROM profesores WHERE username='" . $username . "';";
 
-    $namecheck = mysqli_query($connection, $namecheckquery) or die("2: No se ha encontrado el nombre."); // Error code number '2' = Name check query failed
+    $namecheck = mysqli_query($connection, $namecheckquery) or die("Error 2: El nombre ingresado no se ha podido registrar."); // Error code number '2' = Name check query failed
 
     if (mysqli_num_rows($namecheck) != 1) 
     {
-        echo "5: No hay profesores con el nombre o hay mas de uno"; // Error code number '5' = Either there is no user or more than 1
+        echo "Error 5: No hay profesores con el nombre o hay mas de uno."; // Error code number '5' = Either there is no user or more than 1
         exit();
     }
 
@@ -38,13 +38,11 @@
     $loginhash = crypt($password, $salt);
     if ($hash != $loginhash) 
     {
-        echo "6: Clave Incorrecta"; //Error code number '6' = Password does not match with the one at database
+        echo "Erro 6: Clave Incorrecta."; //Error code number '6' = Password does not match with the one at database
     }
     else
     {
-        echo "0\t". $info["level"];
+        echo "0\t". 0;
     }
-    
-
 
 ?>

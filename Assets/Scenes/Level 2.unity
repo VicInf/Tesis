@@ -413,6 +413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1711066478}
+  ExerciseTheme: {fileID: 0}
+  InGameBackground: {fileID: 0}
 --- !u!114 &84694917
 MonoBehaviour:
   m_ObjectHideFlags: 0

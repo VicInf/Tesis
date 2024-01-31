@@ -60,7 +60,6 @@
         echo "\n";
     }
 
-
     $stmt->close();
 ?>
 
