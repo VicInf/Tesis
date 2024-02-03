@@ -23,6 +23,7 @@ public class DisplayScore : MonoBehaviour
     {
         // Get the value of the 'score' variable
         int score = DialogueLua.GetVariable("score").AsInt;
+        // Get the value of the last scene
         int lastScenePlayed = DialogueLua.GetVariable("scene").AsInt;
 
         // Update the UI Text element with the value of 'score'

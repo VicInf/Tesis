@@ -891,11 +891,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: That is a cat
+        value: James
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: C'est un chat
+        value: "Cl\xE9mence"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 2
@@ -1338,7 +1338,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFC\xF3mo se dice 2?"
+        value: 'Traduzca: "2"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2635,7 +2635,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.2857056, y: 0}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.7000003
   - id: 3
     fields:
@@ -2837,7 +2837,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "M\xE9xico"
+        value: "Traduzca: \"M\xE9xico\""
         type: 0
         typeString: 
       - title: Sequence
@@ -4112,7 +4112,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFC\xF3mo se dice 10?"
+        value: 'Traduzca: "10"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5130,7 +5130,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 39.72592, y: 739.70483}
+    canvasScrollPosition: {x: 21.917755, y: 306.82742}
     canvasZoom: 0.73000026
   - id: 4
     fields:
@@ -5670,7 +5670,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["score"] = 5;
+      userScript: Variable["score"] = 0;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -5711,11 +5711,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Young man
+        value: 'Traduzca: "Young man"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Jeune homme
+        value: 'Traduzca: "Jeune homme"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -6052,11 +6052,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Woman
+        value: 'Traduzca: "Woman"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Femme
+        value: 'Traduzca: "Femme"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -6413,7 +6413,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 303.9171
+        x: 302.54727
         y: 1246.6902
         width: 160
         height: 30
@@ -6440,7 +6440,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFC\xF3mo se dice 19?"
+        value: 'Traduzca: "19"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6854,7 +6854,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xC9l gato se come el libro"
+        value: El gato se come el libro
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6917,7 +6917,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xC9l gato come libros"
+        value: El gato come libros
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -6988,11 +6988,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Mister
+        value: 'Traduzca: "Mister"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Monsieur
+        value: 'Traduzca: "Monsieur"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -7244,7 +7244,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xC9l perro se come el libro"
+        value: El perro se come el libro
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -8084,11 +8084,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Boy
+        value: 'Traduzca: "Boy"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: "Gar\xE7on"
+        value: "Traduzca: \"Gar\xE7on\""
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -8130,8 +8130,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.52618
-        y: 866.3403
+        x: 303.96368
+        y: 867.9028
         width: 160
         height: 30
     - id: 110
@@ -8425,11 +8425,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Girl
+        value: 'Traduzca: "Girl"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Fille
+        value: 'Traduzca: "Fille"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 5
@@ -8985,7 +8985,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.73000026
+    canvasZoom: 0.64000034
   - id: 6
     fields:
     - title: Title
@@ -9091,8 +9091,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 30
+        x: 300
+        y: 20
         width: 160
         height: 30
     - id: 1
@@ -9127,7 +9127,9 @@ MonoBehaviour:
           SetActive(InGameBackground, true);
 
           SetActive(ExerciseTheme,
-          true);'
+          true);
+
+'
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -9153,14 +9155,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["scene"] = 0;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 97
+        x: 300
+        y: 70
         width: 160
         height: 30
     - id: 2
@@ -9213,7 +9215,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 2
         destinationConversationID: 6
-        destinationDialogueID: 3
+        destinationDialogueID: 88
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -9223,8 +9225,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 161
+        x: 300
+        y: 120
         width: 160
         height: 30
     - id: 3
@@ -9277,7 +9279,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 3
         destinationConversationID: 6
-        destinationDialogueID: 4
+        destinationDialogueID: 87
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -9287,8 +9289,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 224
+        x: 300
+        y: 220
         width: 160
         height: 30
     - id: 4
@@ -9350,8 +9352,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 279
+        x: 300
+        y: 320
         width: 160
         height: 30
     - id: 5
@@ -9427,8 +9429,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 225
-        y: 350
+        x: 300
+        y: 370
         width: 160
         height: 30
     - id: 6
@@ -9490,8 +9492,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 19
-        y: 422
+        x: 60
+        y: 420
         width: 160
         height: 30
     - id: 7
@@ -9553,8 +9555,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 222.27585
-        y: 424.72412
+        x: 300
+        y: 420
         width: 160
         height: 30
     - id: 8
@@ -9616,8 +9618,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 428
-        y: 424
+        x: 540
+        y: 420
         width: 160
         height: 30
     - id: 59
@@ -9679,8 +9681,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 101.91489
-        y: 516.70215
+        x: 480
+        y: 470
         width: 160
         height: 30
     - id: 61
@@ -9746,8 +9748,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 358.29782
-        y: 517.76605
+        x: 120
+        y: 470
         width: 160
         height: 30
     - id: 62
@@ -9800,7 +9802,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 62
         destinationConversationID: 6
-        destinationDialogueID: 70
+        destinationDialogueID: 86
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -9810,8 +9812,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 229.57448
-        y: 629.4681
+        x: 300
+        y: 520
         width: 160
         height: 30
     - id: 70
@@ -9903,8 +9905,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 228.58322
-        y: 700.67224
+        x: 300
+        y: 620
         width: 160
         height: 30
     - id: 71
@@ -9966,8 +9968,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1
-        y: 751.8086
+        x: 30
+        y: 670
         width: 160
         height: 30
     - id: 72
@@ -10029,8 +10031,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 169.74857
-        y: 751.8086
+        x: 210
+        y: 670
         width: 160
         height: 30
     - id: 73
@@ -10092,8 +10094,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 336.1122
-        y: 750.67224
+        x: 390
+        y: 670
         width: 160
         height: 30
     - id: 74
@@ -10155,8 +10157,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 507.0211
-        y: 751.8086
+        x: 570
+        y: 670
         width: 160
         height: 30
     - id: 75
@@ -10186,9 +10188,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: '{{default}};
-
-          SetActive(RawImage, false);'
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -10210,7 +10210,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 75
         destinationConversationID: 6
-        destinationDialogueID: 77
+        destinationDialogueID: 80
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10220,8 +10220,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 414.94623
-        y: 798.4983
+        x: 480
+        y: 720
         width: 160
         height: 30
     - id: 76
@@ -10251,9 +10251,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: '{{default}};
-
-          SetActive(RawImage, false);'
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -10279,7 +10277,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 76
         destinationConversationID: 6
-        destinationDialogueID: 77
+        destinationDialogueID: 80
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10289,8 +10287,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 57.0213
-        y: 801.8086
+        x: 120
+        y: 720
         width: 160
         height: 30
     - id: 77
@@ -10321,7 +10319,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: '{{default}};
+
+          SetActive(AudioButton, false);'
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -10343,7 +10343,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 77
         destinationConversationID: 6
-        destinationDialogueID: 78
+        destinationDialogueID: 85
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -10353,8 +10353,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 232.02127
-        y: 883.6267
+        x: 300
+        y: 920
         width: 160
         height: 30
     - id: 78
@@ -10417,8 +10417,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 230.65143
-        y: 942.71765
+        x: 300
+        y: 1020
         width: 160
         height: 30
     - id: 79
@@ -10479,13 +10479,596 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 232.02127
-        y: 992.71765
+        x: 300
+        y: 1070
+        width: 160
+        height: 30
+    - id: 80
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "Ahora escuchemos este audio, haga click en el bot\xF3n que apareci\xF3
+          en pantalla y luego seleccione su respuesta."
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: '{{default}};
+
+          SetActive(AudioButton, true);
+
+          SetActive(RawImage,
+          false);'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 80
+        destinationConversationID: 6
+        destinationDialogueID: 81
+        isConnector: 0
+        priority: 2
+      - originConversationID: 6
+        originDialogueID: 80
+        destinationConversationID: 6
+        destinationDialogueID: 82
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 300
+        y: 770
+        width: 160
+        height: 30
+    - id: 81
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: Parrot
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: Perroquet
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 81
+        destinationConversationID: 6
+        destinationDialogueID: 83
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 120
+        y: 820
+        width: 160
+        height: 30
+    - id: 82
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: Carrot
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: "Carr\xE9"
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 82
+        destinationConversationID: 6
+        destinationDialogueID: 84
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 480
+        y: 820
+        width: 160
+        height: 30
+    - id: 83
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "[em1]\xA1Correcto![em1]"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 83
+        destinationConversationID: 6
+        destinationDialogueID: 77
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 120
+        y: 870
+        width: 160
+        height: 30
+    - id: 84
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: '[em2]Incorrecto...
+
+          [em3]La respuesta correcta era [em1]Parrot[em1]'
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: '[em2]Incorrecto...
+
+          [em3]La respuesta correcta era [em1]Perroquet[em1]'
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 84
+        destinationConversationID: 6
+        destinationDialogueID: 77
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 480
+        y: 870
+        width: 160
+        height: 30
+    - id: 85
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Continuar.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 85
+        destinationConversationID: 6
+        destinationDialogueID: 78
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 300
+        y: 970
+        width: 160
+        height: 30
+    - id: 86
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Continuar.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 86
+        destinationConversationID: 6
+        destinationDialogueID: 70
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 300
+        y: 570
+        width: 160
+        height: 30
+    - id: 87
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Continuar.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 87
+        destinationConversationID: 6
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 300
+        y: 270
+        width: 160
+        height: 30
+    - id: 88
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Continuar.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 6
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 6
+        originDialogueID: 88
+        destinationConversationID: 6
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 300
+        y: 170
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 2.7397156, y: 502.04718}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 0, y: 581.579}
+    canvasZoom: 0.7600002
   - id: 7
     fields:
     - title: Title
@@ -10696,11 +11279,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Reception
+        value: 'Traduzca: "Reception"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Accueil
+        value: 'Traduzca: "Accueil"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 7
@@ -10742,8 +11325,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
-        y: 570
+        x: 298.63013
+        y: 572.73975
         width: 160
         height: 30
     - id: 72
@@ -11402,8 +11985,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 310.1266
-        y: 894.0506
+        x: 305.649
+        y: 895.54315
         width: 160
         height: 30
     - id: 82
@@ -11437,11 +12020,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Hello
+        value: 'Traduzca: "Hello"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Bonjour
+        value: 'Traduzca: "Bonjour"'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 7
@@ -13050,8 +13633,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 15.789459, y: 389.4737}
-    canvasZoom: 0.7600001
+    canvasScrollPosition: {x: 1.4925232, y: 0}
+    canvasZoom: 0.6700002
   - id: 8
     fields:
     - title: Title
@@ -13310,8 +13893,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 653.4783
+        x: 268.7342
+        y: 654.7441
         width: 160
         height: 30
     - id: 72
@@ -13653,7 +14236,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
+        x: 268.7342
         y: 803.4783
         width: 160
         height: 30
@@ -13842,7 +14425,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
+        x: 358.73416
         y: 853.4783
         width: 160
         height: 30
@@ -14005,7 +14588,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Goodye
+        value: 'Traduzca: "Goodbye"'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
@@ -14525,7 +15108,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFC\xF3mo se dice 29?"
+        value: 'Traduzca: "29"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -15481,7 +16064,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 64.556854}
+    canvasScrollPosition: {x: 0, y: 2.5317383}
     canvasZoom: 0.7900002
   - id: 9
     fields:
@@ -15588,8 +16171,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 161
-        y: 29
+        x: 300
+        y: 20
         width: 160
         height: 30
     - id: 70
@@ -15650,14 +16233,16 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["score"] = 0;
+      userScript: 'Variable["scene"] = 6;
+
+        Variable["score"] = 0;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 267.8261
-        y: 143
+        x: 300
+        y: 70
         width: 160
         height: 30
     - id: 71
@@ -15683,11 +16268,13 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "\xBFComo se dice gato?"
+        value: Escuche el audio y responda.
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: '{{default}};
+
+          SetActive(AudioButton, true);'
         type: 0
         typeString: 
       - title: en
@@ -15737,8 +16324,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 636.4783
+        x: 300
+        y: 570
         width: 160
         height: 30
     - id: 72
@@ -15772,11 +16359,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Cat
+        value: I am studying sciences
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Chat
+        value: "J'\xE9tudie les sciences"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -15790,7 +16377,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 72
         destinationConversationID: 9
-        destinationDialogueID: 101
+        destinationDialogueID: 102
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -15800,8 +16387,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 686.4783
+        x: 30
+        y: 620
         width: 160
         height: 30
     - id: 73
@@ -15835,11 +16422,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Dog
+        value: I am David
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Chien
+        value: Je suis David
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -15863,8 +16450,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 686.4783
+        x: 210
+        y: 620
         width: 160
         height: 30
     - id: 74
@@ -15898,11 +16485,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Black
+        value: I am studying political science
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Noir
+        value: "J'\xE9tudie les sciences politiques"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -15916,7 +16503,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 74
         destinationConversationID: 9
-        destinationDialogueID: 102
+        destinationDialogueID: 101
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -15926,8 +16513,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 686.4783
+        x: 390
+        y: 620
         width: 160
         height: 30
     - id: 75
@@ -15961,11 +16548,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Horse
+        value: He is studying
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Cheval
+        value: "Il \xE9tudie"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -15989,8 +16576,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 686.4783
+        x: 570
+        y: 620
         width: 160
         height: 30
     - id: 76
@@ -16016,13 +16603,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFComo se llama este animal?"
+        value: "\xBFC\xF3mo se llama este pa\xEDs?"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
         value: '{{default}};
 
-          SetActive(RawImage, true);'
+          SetActive(USImage, true);
+
+          SetActive(AudioButton,
+          false);'
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -16080,8 +16670,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 786.4783
+        x: 300
+        y: 720
         width: 160
         height: 30
     - id: 77
@@ -16115,11 +16705,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Lion
+        value: Argentina
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Lionne
+        value: L'Argentine
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16143,8 +16733,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 836.4783
+        x: 30
+        y: 770
         width: 160
         height: 30
     - id: 78
@@ -16178,11 +16768,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Parrot
+        value: Denmark
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Perroquet
+        value: Le Danemark
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16206,8 +16796,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 836.4783
+        x: 210
+        y: 770
         width: 160
         height: 30
     - id: 79
@@ -16241,11 +16831,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Dog
+        value: United States
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Chien
+        value: "Les \xC9tats-Unis"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16259,7 +16849,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 79
         destinationConversationID: 9
-        destinationDialogueID: 104
+        destinationDialogueID: 103
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -16269,8 +16859,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 836.4783
+        x: 390
+        y: 770
         width: 160
         height: 30
     - id: 80
@@ -16304,11 +16894,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: en
-        value: Cat
+        value: Venezuela
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Chat
+        value: Le Venezuela
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16322,7 +16912,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 80
         destinationConversationID: 9
-        destinationDialogueID: 103
+        destinationDialogueID: 104
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -16332,8 +16922,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 836.4783
+        x: 570
+        y: 770
         width: 160
         height: 30
     - id: 81
@@ -16365,7 +16955,7 @@ MonoBehaviour:
       - title: Sequence
         value: '{{default}};
 
-          SetActive(RawImage, false);'
+          SetActive(USImage, false);'
         type: 0
         typeString: CustomFieldType_Text
       - title: en
@@ -16383,16 +16973,22 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 9
+        originDialogueID: 81
+        destinationConversationID: 9
+        destinationDialogueID: 108
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: Variable["scene"] = 6;
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 261.63464
-        y: 940.3708
+        x: 311.4286
+        y: 887.1429
         width: 160
         height: 30
     - id: 82
@@ -16426,11 +17022,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Yo soy Maria
+        value: Days of the week
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Yo soy Marie
+        value: Les jours de la semaine
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16466,8 +17062,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 186.47827
+        x: 300
+        y: 120
         width: 160
         height: 30
     - id: 83
@@ -16493,7 +17089,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "Meses del a\xF1o"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16501,11 +17097,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: I am Marie
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Je suis Marie
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16519,7 +17115,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 83
         destinationConversationID: 9
-        destinationDialogueID: 95
+        destinationDialogueID: 96
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -16529,8 +17125,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 236.47827
+        x: 60
+        y: 170
         width: 160
         height: 30
     - id: 84
@@ -16556,7 +17152,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "D\xEDas del mes"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16564,11 +17160,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: That is a dog
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: C'est un chien
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16592,8 +17188,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 236.47827
+        x: 300
+        y: 170
         width: 160
         height: 30
     - id: 85
@@ -16619,7 +17215,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "D\xEDas de la semana"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16627,11 +17223,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: She is Marie
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Elle est Marie
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16645,7 +17241,7 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 85
         destinationConversationID: 9
-        destinationDialogueID: 96
+        destinationDialogueID: 95
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -16655,8 +17251,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 510
-        y: 236.47827
+        x: 540
+        y: 170
         width: 160
         height: 30
     - id: 86
@@ -16682,7 +17278,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\xBFComo se dice 2?"
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16690,11 +17286,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: 
+        value: Monday, Tuesday, Wednesday
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: 
+        value: Lundi, mardi, mercredi
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16723,12 +17319,6 @@ MonoBehaviour:
         destinationDialogueID: 89
         isConnector: 0
         priority: 2
-      - originConversationID: 9
-        originDialogueID: 86
-        destinationConversationID: 9
-        destinationDialogueID: 94
-        isConnector: 0
-        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -16736,8 +17326,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 336.47827
+        x: 300
+        y: 270
         width: 160
         height: 30
     - id: 87
@@ -16763,7 +17353,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Enero, Febrero, Marzo
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16771,11 +17361,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Three
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Trois
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16799,8 +17389,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 386.47827
+        x: 60
+        y: 320
         width: 160
         height: 30
     - id: 88
@@ -16826,7 +17416,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "Lunes, Martes, Mi\xE9rcoles"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16834,11 +17424,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Two
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Deux
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16862,8 +17452,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 386.47827
+        x: 300
+        y: 320
         width: 160
         height: 30
     - id: 89
@@ -16889,7 +17479,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Uno, Dos, Tres
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -16897,11 +17487,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: Ten
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Dix
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -16925,8 +17515,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 386.47827
+        x: 540
+        y: 320
         width: 160
         height: 30
     - id: 90
@@ -16960,11 +17550,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: I am Michael
+        value: Thursday, Friday, Saturday, Sunday
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: Je suis Michael
+        value: Jeudi, Vendredi, Samedi, Dimanche
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17000,8 +17590,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 486.47827
+        x: 300
+        y: 417.26025
         width: 160
         height: 30
     - id: 91
@@ -17027,7 +17617,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: El es Michael
+        value: Marzo, Abril, Mayo, Junio
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17063,8 +17653,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 536.4783
+        x: 60
+        y: 470
         width: 160
         height: 30
     - id: 92
@@ -17090,7 +17680,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Tu eres Michael
+        value: "Ella, \xC9l, T\xFA, Yo"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17126,8 +17716,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 536.4783
+        x: 300
+        y: 470
         width: 160
         height: 30
     - id: 93
@@ -17153,7 +17743,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Yo soy Michael
+        value: "Jueves, Viernes, S\xE1bado, Domingo"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17189,71 +17779,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 510
-        y: 536.4783
-        width: 160
-        height: 30
-    - id: 94
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: en
-        value: Five
-        type: 4
-        typeString: CustomFieldType_Localization
-      - title: fr
-        value: Cinq
-        type: 4
-        typeString: CustomFieldType_Localization
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 94
-        destinationConversationID: 9
-        destinationDialogueID: 97
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: Variable["Correcto"] = false
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
         x: 540
-        y: 386.47827
+        y: 470
         width: 160
         height: 30
     - id: 95
@@ -17315,8 +17842,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 286.47827
+        x: 480
+        y: 220
         width: 160
         height: 30
     - id: 96
@@ -17342,7 +17869,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "[em2]Incorrecto...\n[em3]La respuesta correcta era [em1]D\xEDas de
+          la semana[em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17350,17 +17878,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]I
-          am Maria[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Je
-          suis Marie[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17384,8 +17906,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 450
-        y: 286.47827
+        x: 120
+        y: 220
         width: 160
         height: 30
     - id: 97
@@ -17411,7 +17933,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "[em2]Incorrecto...\n[em3]La respuesta correcta era [em1]Lunes, Martes,
+          Mi\xE9rcoles[em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17419,15 +17942,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Two[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Deux[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17451,8 +17970,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 436.47827
+        x: 120
+        y: 370
         width: 160
         height: 30
     - id: 98
@@ -17514,8 +18033,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 452.17392
-        y: 436.47827
+        x: 478.6302
+        y: 372.73975
         width: 160
         height: 30
     - id: 99
@@ -17577,8 +18096,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 443.47827
-        y: 588.6522
+        x: 480
+        y: 520
         width: 160
         height: 30
     - id: 100
@@ -17604,7 +18123,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: "[em2]Incorrecto...\n[em3]La respuesta correcta era [em1]Jueves, Viernes,
+          S\xE1bado, Domingo[em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -17612,17 +18132,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Yo
-          soy Michael[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Yo
-          soy Michael[em1]'
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17646,8 +18160,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 586.4783
+        x: 120
+        y: 520
         width: 160
         height: 30
     - id: 101
@@ -17713,8 +18227,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 736.4783
+        x: 87.1429
+        y: 677.1428
         width: 160
         height: 30
     - id: 102
@@ -17750,13 +18264,13 @@ MonoBehaviour:
       - title: en
         value: '[em2]Incorrecto...
 
-          [em3]La respuesta correcta era [em1]Cat[em1]'
+          [em3]La respuesta correcta era [em1]I
+          am studying political science[em1]'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Chat[em1]'
+        value: "[em2]Incorrecto...\n[em3]La respuesta correcta era [em1]J'\xE9tudie
+          les sciences politiques[em1]"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17780,8 +18294,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 450
-        y: 736.4783
+        x: 478.57147
+        y: 680
         width: 160
         height: 30
     - id: 103
@@ -17843,8 +18357,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.65222
-        y: 884.3043
+        x: 485.71426
+        y: 835.71436
         width: 160
         height: 30
     - id: 104
@@ -17880,13 +18394,12 @@ MonoBehaviour:
       - title: en
         value: '[em2]Incorrecto...
 
-          [em3]La respuesta correcta era [em1]Cat[em1]'
+          [em3]La respuesta correcta era [em1]United
+          States[em1]'
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
-        value: '[em2]Incorrecto...
-
-          [em3]La respuesta correcta era [em1]Chat[em1]'
+        value: "[em2]Incorrecto...\n[em3]La respuesta correcta era [em1]Les \xC9tats-Unis[em1]"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 9
@@ -17910,13 +18423,75 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 886.4783
+        x: 134.2857
+        y: 837.1428
+        width: 160
+        height: 30
+    - id: 108
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 'LoadLevel(ScoreScene);
+
+          SetActive(InGameBackground, false);
+
+          SetActive(ExerciseTheme,
+          false);'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 9
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 317.14273
+        y: 969.74994
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 544}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 20, y: 0}
+    canvasZoom: 0.70000017
   - id: 10
     fields:
     - title: Title
@@ -18022,8 +18597,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 30
+        x: 300
+        y: 20
         width: 160
         height: 30
     - id: 70
@@ -18090,8 +18665,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 267.8261
-        y: 179
+        x: 300
+        y: 70
         width: 160
         height: 30
     - id: 71
@@ -18171,8 +18746,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 672.4783
+        x: 300
+        y: 570
         width: 160
         height: 30
     - id: 72
@@ -18234,8 +18809,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 722.4783
+        x: 30
+        y: 620
         width: 160
         height: 30
     - id: 73
@@ -18297,8 +18872,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 722.4783
+        x: 210
+        y: 620
         width: 160
         height: 30
     - id: 74
@@ -18360,8 +18935,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 722.4783
+        x: 390
+        y: 620
         width: 160
         height: 30
     - id: 75
@@ -18423,8 +18998,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 722.4783
+        x: 570
+        y: 620
         width: 160
         height: 30
     - id: 76
@@ -18514,8 +19089,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 822.4783
+        x: 300
+        y: 720
         width: 160
         height: 30
     - id: 77
@@ -18577,8 +19152,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 872.4783
+        x: 30
+        y: 770
         width: 160
         height: 30
     - id: 78
@@ -18640,8 +19215,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 872.4783
+        x: 210
+        y: 770
         width: 160
         height: 30
     - id: 79
@@ -18703,8 +19278,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 872.4783
+        x: 390
+        y: 770
         width: 160
         height: 30
     - id: 80
@@ -18766,8 +19341,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 872.4783
+        x: 570
+        y: 770
         width: 160
         height: 30
     - id: 81
@@ -18825,8 +19400,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 263.41513
-        y: 976.3708
+        x: 300
+        y: 870
         width: 160
         height: 30
     - id: 82
@@ -18900,8 +19475,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 222.47827
+        x: 300
+        y: 120
         width: 160
         height: 30
     - id: 83
@@ -18963,8 +19538,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 272.47827
+        x: 60
+        y: 170
         width: 160
         height: 30
     - id: 84
@@ -19026,8 +19601,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 272.47827
+        x: 300
+        y: 170
         width: 160
         height: 30
     - id: 85
@@ -19089,8 +19664,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 510
-        y: 272.47827
+        x: 540
+        y: 170
         width: 160
         height: 30
     - id: 86
@@ -19170,8 +19745,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 372.47827
+        x: 300
+        y: 270
         width: 160
         height: 30
     - id: 87
@@ -19233,8 +19808,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 0
-        y: 422.47827
+        x: 30
+        y: 320
         width: 160
         height: 30
     - id: 88
@@ -19296,8 +19871,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 180
-        y: 422.47827
+        x: 210
+        y: 320
         width: 160
         height: 30
     - id: 89
@@ -19359,8 +19934,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 360
-        y: 422.47827
+        x: 390
+        y: 320
         width: 160
         height: 30
     - id: 90
@@ -19434,8 +20009,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 522.4783
+        x: 300
+        y: 420
         width: 160
         height: 30
     - id: 91
@@ -19497,8 +20072,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 572.4783
+        x: 60
+        y: 470
         width: 160
         height: 30
     - id: 92
@@ -19560,8 +20135,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 572.4783
+        x: 300
+        y: 470
         width: 160
         height: 30
     - id: 93
@@ -19623,8 +20198,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 510
-        y: 572.4783
+        x: 540
+        y: 470
         width: 160
         height: 30
     - id: 94
@@ -19686,8 +20261,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 540
-        y: 422.47827
+        x: 570
+        y: 320
         width: 160
         height: 30
     - id: 95
@@ -19749,8 +20324,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 322.47827
+        x: 120
+        y: 220
         width: 160
         height: 30
     - id: 96
@@ -19818,8 +20393,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 450
-        y: 322.47827
+        x: 480
+        y: 220
         width: 160
         height: 30
     - id: 97
@@ -19885,8 +20460,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 472.47827
+        x: 120
+        y: 370
         width: 160
         height: 30
     - id: 98
@@ -19948,8 +20523,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 452.17392
-        y: 472.47827
+        x: 480
+        y: 370
         width: 160
         height: 30
     - id: 99
@@ -20011,8 +20586,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 443.47827
-        y: 624.6522
+        x: 480
+        y: 520
         width: 160
         height: 30
     - id: 100
@@ -20080,8 +20655,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 622.4783
+        x: 120
+        y: 520
         width: 160
         height: 30
     - id: 101
@@ -20147,8 +20722,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 772.4783
+        x: 120
+        y: 670
         width: 160
         height: 30
     - id: 102
@@ -20214,8 +20789,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 450
-        y: 772.4783
+        x: 480
+        y: 670
         width: 160
         height: 30
     - id: 103
@@ -20277,8 +20852,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 445.65222
-        y: 920.3043
+        x: 480
+        y: 820
         width: 160
         height: 30
     - id: 104
@@ -20344,12 +20919,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 90
-        y: 922.4783
+        x: 120
+        y: 820
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 505.16394}
+    canvasScrollPosition: {x: 28.048782, y: 3.6585388}
     canvasZoom: 0.8200001
   - id: 11
     fields:
@@ -52480,6 +53055,301 @@ MonoBehaviour:
         serializedVersion: 2
         x: 392
         y: 287
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 25
+    fields:
+    - title: Title
+      value: Motivacional Speech
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 25
+        originDialogueID: 0
+        destinationConversationID: 25
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      - originConversationID: 25
+        originDialogueID: 0
+        destinationConversationID: 25
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      - originConversationID: 25
+        originDialogueID: 0
+        destinationConversationID: 25
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 49
+        y: 158
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "\xA1Vamos, t\xFA puedes hacerlo!"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 333
+        y: 73
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "\xA1Sigue intentando no te desanimes!"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 337
+        y: 157
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: "\xA1Aprender es divertido, sigue intentando!"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: fr
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 337
+        y: 244
         width: 160
         height: 30
     entryGroups: []

@@ -9,7 +9,6 @@ public class RegisterMainMenu : MonoBehaviour
 
     public Button registerButton;
     public Button loginButton;
-    public Button playButton;
 
     public TMP_Text playerDisplay;
 
@@ -22,6 +21,5 @@ public class RegisterMainMenu : MonoBehaviour
         }
         registerButton.interactable = !DBManager.Loggedin;
         loginButton.interactable = !DBManager.Loggedin;
-        playButton.interactable= DBManager.Loggedin;
     }
 }

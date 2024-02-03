@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StudentProgress.unity
     guid: 299351404934d764b9bb341e16c41162
   - enabled: 1
+    path: Assets/Scenes/MeanLevelStudent.unity
+    guid: 4bacbcb1cb9071f45b513921446b2168
+  - enabled: 1
     path: Assets/Scenes/GameMainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -53,6 +56,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 3812d3a5faa867249bb1f40a58561449
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 75a27606e83ef9c4ca85bfadf4a63360
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: 5237bcd8ca5b98a4fa99ee13e188b8fb
+  - enabled: 1
+    path: Assets/Scenes/Level 6.unity
+    guid: d1c24b30039049d4bae41401e905e6b2
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: b0065c7968ad9b3458aafe24eb75c038

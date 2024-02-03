@@ -57,7 +57,7 @@ public class LogIn : MonoBehaviour
                     DBManager.username = nameInputField.text;
                     DBManager.levelEN = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
                     DBManager.levelFR = int.Parse(webRequest.downloadHandler.text.Split('\t')[2]);
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("RegisterMainMenu");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("GameMainMenu");
                 }
             }
         }
