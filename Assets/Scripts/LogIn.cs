@@ -88,6 +88,8 @@ public class LogIn : MonoBehaviour
                 else
                 {
                     DBManager.username = nameInputField.text;
+                    DBManager.levelEN = int.Parse(webRequest.downloadHandler.text.Split('\t')[1]);
+                    DBManager.levelFR = int.Parse(webRequest.downloadHandler.text.Split('\t')[2]);
                     UnityEngine.SceneManagement.SceneManager.LoadScene("TeacherMenu");
                 }
             }

@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class LevelsMenu : MonoBehaviour
 {
     public GameObject menu; 
     public Button[] buttons;
+    public TMP_Text showScore;
 
     private void Start()
     {
@@ -25,6 +27,8 @@ public class LevelsMenu : MonoBehaviour
             {
                 buttons[i].interactable = true;
             }
+            string score = PlayerPrefs.GetString(DBManager.username + "/scoreMessageFR", "");
+            showScore.text = score;
         }
         if (DBManager.language == "en")
         {
@@ -39,9 +43,9 @@ public class LevelsMenu : MonoBehaviour
             {
                 buttons[i].interactable = true;
             }
+            string score = PlayerPrefs.GetString(DBManager.username + "/scoreMessageEN", "");
+            showScore.text = score;
         }
-
-        
     }
 
     public void ShowMenu()

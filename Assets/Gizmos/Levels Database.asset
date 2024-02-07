@@ -1041,7 +1041,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["scene"] = 1;
+      userScript: 'Variable["scene"] = 1;
+
+        Variable["questionsAsked"] = 5;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1157,7 +1159,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: en
-        value: I am Marie
+        value: I am Maria
         type: 4
         typeString: CustomFieldType_Localization
       - title: fr
@@ -1935,7 +1937,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s creciendo con cada respuesta correcta![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1972,7 +1974,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 120
-        y: 220
+        y: 221.5625
         width: 160
         height: 30
     - id: 60
@@ -2134,7 +2136,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s haciendo un trabajo incre\xEDble![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2197,7 +2199,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, cada pregunta bien respondida es un triunfo![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2329,7 +2331,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando que cada peque\xF1o paso
+          cuenta![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2463,7 +2466,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s superando todos los desaf\xEDos![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2499,8 +2502,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 475.65222
-        y: 817.82605
+        x: 477.21472
+        y: 816.26355
         width: 160
         height: 30
     - id: 69
@@ -2636,7 +2639,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7000003
+    canvasZoom: 0.6100004
   - id: 3
     fields:
     - title: Title
@@ -2810,8 +2813,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 439.1842
-        y: 403.49683
+        x: 437.7556
+        y: 400.63968
         width: 160
         height: 30
     - id: 71
@@ -3545,7 +3548,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["scene"] = 2;
+      userScript: 'Variable["scene"] = 2;
+
+        Variable["questionsAsked"] = 5;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4439,7 +4444,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, tu esfuerzo est\xE1 dando frutos![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -4632,7 +4637,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, sigue as\xED y ser\xE1s biling\xFCe en poco tiempo![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -4695,7 +4700,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando que no hay nada que no puedas
+          lograr![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -4825,7 +4831,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando que cada desaf\xEDo es una
+          oportunidad para aprender![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -4960,7 +4967,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando que el aprendizaje es la
+          llave que abre todas las puertas![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -5130,8 +5138,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 21.917755, y: 306.82742}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 2.8571777, y: 319.9998}
+    canvasZoom: 0.7000003
   - id: 4
     fields:
     - title: Title
@@ -6407,7 +6415,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["scene"] = 3;
+      userScript: 'Variable["scene"] = 3;
+
+        Variable["questionsAsked"] = 7;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8984,8 +8994,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.64000034
+    canvasScrollPosition: {x: 0, y: 60.033875}
+    canvasZoom: 0.5800004
   - id: 6
     fields:
     - title: Title
@@ -9645,7 +9655,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s en el camino hacia la excelencia![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -10184,7 +10194,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando que el aprendizaje es un
+          viaje, no un destino![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -10707,7 +10718,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "[em1]\xA1Correcto![em1]"
+        value: "[em1]\xA1Correcto, est\xE1s demostrando un gran compromiso con tu
+          aprendizaje![em1]"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -11067,8 +11079,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 581.579}
-    canvasZoom: 0.7600002
+    canvasScrollPosition: {x: 0, y: 511.51538}
+    canvasZoom: 0.7000003
   - id: 7
     fields:
     - title: Title
@@ -11979,14 +11991,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["questionsAsked"] = 5;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 305.649
-        y: 895.54315
+        x: 307.1415
+        y: 894.05066
         width: 160
         height: 30
     - id: 82
@@ -13633,8 +13645,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1.4925232, y: 0}
-    canvasZoom: 0.6700002
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.6400002
   - id: 8
     fields:
     - title: Title
@@ -14547,13 +14559,13 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["questionsAsked"] = 5;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 264.63464
+        x: 262.81644
         y: 957.3708
         width: 160
         height: 30
@@ -14892,8 +14904,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 270
-        y: 353.47827
+        x: 268.18182
+        y: 351.6601
         width: 160
         height: 30
     - id: 87
@@ -16064,8 +16076,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 2.5317383}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 27.272736}
+    canvasZoom: 0.5500003
   - id: 9
     fields:
     - title: Title
@@ -16981,7 +16993,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["questionsAsked"] = 5;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -18490,8 +18502,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 20, y: 0}
-    canvasZoom: 0.70000017
+    canvasScrollPosition: {x: 0, y: 397.01483}
+    canvasZoom: 0.6700002
   - id: 10
     fields:
     - title: Title
@@ -18659,7 +18671,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["score"] = 0;
+      userScript: 'Variable["score"] = 0;
+
+        Variable["scene"] = 7;'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -19394,13 +19408,13 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Variable["scene"] = 7;
+      userScript: Variable["questionsAsked"] = 5
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 300
+        x: 298.7805
         y: 870
         width: 160
         height: 30
@@ -20924,8 +20938,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 28.048782, y: 3.6585388}
-    canvasZoom: 0.8200001
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.5800003
   - id: 11
     fields:
     - title: Title

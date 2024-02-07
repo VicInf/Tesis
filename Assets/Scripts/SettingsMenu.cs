@@ -12,6 +12,8 @@ public class SettingsMenu : MonoBehaviour
 
     public AudioMixer audioMixer;
 
+    private float previousVolumeLevel;
+
     public TMPro.TMP_Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
@@ -42,6 +44,12 @@ public class SettingsMenu : MonoBehaviour
 
         volumeSlider.value = PlayerPrefs.GetFloat("Volume", 0.75f);
         volumeSlider.onValueChanged.AddListener(SetVolume);
+    }
+
+    private void Update()
+    {
+        audioMixer.GetFloat("Volume", out previousVolumeLevel);
+        volumeSlider.value = previousVolumeLevel;
     }
 
     public void SetResolution (int resolutionIndex)

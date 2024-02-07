@@ -61,7 +61,7 @@ public class Registration : MonoBehaviour
                 else
                 {
                     dataBaseObject.SetActive(true);
-                    dataBaseText.text = webRequest.downloadHandler.text.Split('\t')[1];
+                    dataBaseText.text = "Se ha registrado exitosamente.";
                 }
             }
         }
