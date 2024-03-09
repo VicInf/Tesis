@@ -1,7 +1,5 @@
 <h1>Langues Peritus</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 This project consist in a videogame that teach both English and French
 <br />
@@ -21,34 +19,74 @@ This project consist in a videogame that teach both English and French
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Register Menu: <br/>
+<img src="https://i.imgur.com/UfwLbet.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Register Account:  <br/>
+<img src="https://i.imgur.com/GWi1Hpb.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+LogIn: <br/>
+<img src="https://i.imgur.com/EAJKetm.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Change Password:  <br/>
+<img src="https://i.imgur.com/eKQAm4n.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vor3IEv.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Teacher Menu:  <br/>
+<img src="https://i.imgur.com/CJEgzAC.png" height="80%" width="80%" alt="Game Screens"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
+Student Progress Table:  <br/>
+<img src="https://i.imgur.com/iYbytAR.png" height="80%" width="80%" alt="Game Screens"/>
+Add Student: <br/>
+<img src="https://i.imgur.com/e6NSc5R.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Remove Student:  <br/>
+<img src="https://i.imgur.com/9rZITTB.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Mean Students: <br/>
+<img src="https://i.imgur.com/Hp08QwW.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Main Menu: <br/>
+<img src="https://i.imgur.com/Z64JnkZ.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Settings Menu:  <br/>
+<img src="https://i.imgur.com/XAoeTtX.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Game Lobby: <br/>
+<img src="https://i.imgur.com/yReVrFV.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Teacher NPC Options:  <br/>
+<img src="https://i.imgur.com/mQpPIwX.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Level Menu: <br/>
+<img src="https://i.imgur.com/0kNTfp5.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+Gameplay: <br/>
+<img src="https://i.imgur.com/BGnZJoU.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+<img src="https://i.imgur.com/LmDoLRq.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+<img src="https://i.imgur.com/g46mfJ4.png" height="80%" width="80%" alt="Game Screens"/>
+<br />
+<br />
+ </p>
 <!--
  ```diff
 - text in red
